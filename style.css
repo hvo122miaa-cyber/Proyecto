@@ -338,3 +338,181 @@ form{
     margin: 0 auto;
     background: var(--blanco);
     padding: 25px;}
+    .tarjeta-horario {
+        width: 90%;
+    }
+}
+/* DISEÑO RESPONSIVO - CAFETERÍA ESCOLAR */
+
+/* Evitar desplazamiento horizontal */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Todas las imágenes se adaptan */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* COMPUTADORAS */
+@media screen and (min-width: 1024px) {
+
+    .inicio {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .inicio img {
+        width: 45%;
+        height: 320px;
+        object-fit: cover;
+    }
+
+    .productos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav {
+        display: flex;
+        gap: 15px;
+    }
+}
+
+/* TABLETAS */
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio img {
+        width: 85%;
+        height: 280px;
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor-horarios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+}
+/* DISEÑO RESPONSIVO - CAFETERÍA ESCOLAR */
+
+/* Evitar desplazamiento horizontal */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Todas las imágenes se adaptan */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* COMPUTADORAS */
+@media screen and (min-width: 1024px) {
+
+    .inicio {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .inicio img {
+        width: 45%;
+        height: 320px;
+        object-fit: cover;
+    }
+
+    .productos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav {
+        display: flex;
+        gap: 15px;
+    }
+}
+
+/* TABLETAS */
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio img {
+        width: 85%;
+        height: 280px;
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor-horarios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+}
