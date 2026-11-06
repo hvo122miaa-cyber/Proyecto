@@ -457,3 +457,71 @@ footer {
         font-size: 26px;
     }
 }
+/* SECCIÓN DE HORARIOS */
+.horarios {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff8ed;
+}
+
+.horarios h2 {
+    color: #783f04;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.contenedor-horarios {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-horario {
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.tarjeta-horario:hover {
+    transform: translateY(-8px);
+}
+
+.tarjeta-horario img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.tarjeta-horario h3 {
+    color: #a0522d;
+    font-size: 23px;
+    margin: 20px 10px;
+}
+
+.tarjeta-horario p {
+    color: #444;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* DISEÑO PARA CELULARES */
+@media (max-width: 600px) {
+    .contenedor-horarios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-horario {
+        width: 90%;
+    }
+}
