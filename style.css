@@ -242,3 +242,82 @@ footer {
         height: 260px;
     }
 }
+#mision-vision {
+    padding: 60px 20px;
+    background-color: #fff8f0;
+    text-align: center;
+}
+
+#mision-vision h2 {
+    color: #7b3f19;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#mision-vision .texto-centro {
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.contenedor-mvv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.tarjeta-mvv {
+    background-color: white;
+    padding: 30px 22px;
+    border-radius: 15px;
+    border-top: 5px solid #e89b42;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-mvv:hover {
+    transform: translateY(-8px);
+}
+
+.icono-mvv {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-mvv h3 {
+    color: #a65320;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-mvv p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.tarjeta-mvv ul {
+    text-align: left;
+    padding-left: 20px;
+    color: #555;
+    line-height: 1.9;
+}
+
+.tarjeta-mvv li {
+    margin-bottom: 8px;
+}
+
+/* DISEÑO PARA CELULARES Y TABLETS */
+
+@media (max-width: 768px) {
+    .contenedor-mvv {
+        grid-template-columns: 1fr;
+    }
+
+    #mision-vision h2 {
+        font-size: 26px;
+    }
+}
